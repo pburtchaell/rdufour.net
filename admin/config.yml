@@ -1,10 +1,12 @@
 backend:
   name: git-gateway
-  branch: master # Branch to update (master by default)
+  branch: master
 
-media_folder: "img/uploads" # Folder where user uploaded files should go
+# Folder where user uploaded files should go
+media_folder: "img/uploads"
 
-collections: # A list of collections the CMS should be able to edit
+# A list of collections the CMS should be able to edit
+collections:
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"
     folder: "_posts" # The path to the folder where the documents are stored
